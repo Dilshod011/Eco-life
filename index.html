@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#123d2b" />
+    <title>EcoLife — Yashil kelajak</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="page-home">
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="index.html"
+          ><span class="brand-mark"><i data-lucide="leaf"></i></span
+          ><span>Eco<span>Life.</span></span></a
+        >
+        <nav class="nav-links">
+          <a href="index.html" data-page="index.html">Bosh sahifa</a
+          ><a href="sorting.html" data-page="sorting.html">Saralash</a
+          ><a href="scanner.html" data-page="scanner.html">AI Scanner</a
+          ><a href="dashboard.html" data-page="dashboard.html">Odatlarim</a>
+        </nav>
+        <a class="btn nav-cta" href="scanner.html"
+          >Sinab ko'rish <i data-lucide="arrow-up-right"></i
+        ></a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Menyuni ochish">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+      <div class="mobile-nav container" id="mobileNav">
+        <a href="index.html">Bosh sahifa</a
+        ><a href="sorting.html">Saralash qo'llanmasi</a
+        ><a href="scanner.html">AI Scanner</a
+        ><a href="dashboard.html">Ekologik odatlar</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="reveal">
+            <span class="eyebrow">Kelajak uchun yashil qadam</span>
+            <h1>Tabiatni asra,<br /><em>kelajakni yarat!</em></h1>
+            <p class="hero-copy">
+              EcoLife — chiqindilarni to'g'ri saralash, qayta ishlash va
+              ekologik odatlarni shakllantirishga yordam beradigan zamonaviy
+              platforma. Bugun boshlang, ertangi kunni o'zgartiring.
+            </p>
+            <div class="hero-actions">
+              <a class="btn" href="sorting.html"
+                >Saralashni o'rganish <i data-lucide="arrow-right"></i></a
+              ><a class="btn btn-light" href="scanner.html"
+                >AI Scanner bilan tanishish</a
+              >
+            </div>
+          </div>
+          <div class="hero-image-wrap reveal">
+            <img
+              class="hero-image float"
+              src="https://images.unsplash.com/photo-1472396961693-142e6e269027?w=1200&auto=format&fit=crop"
+              alt="Yashil tabiat va o'rmon"
+            />
+            <div class="float-card">
+              <i data-lucide="sprout"></i> Har bir qadam muhim<small
+                >Bugun tabiatni asrang!</small
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container split">
+          <img
+            class="split-img reveal"
+            src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=1100&auto=format&fit=crop"
+            alt="Ekologik hayot va tabiat"
+          />
+          <div class="reveal">
+            <span class="eyebrow">Biz haqimizda</span>
+            <h2 style="font-size: clamp(30px, 4vw, 46px); line-height: 1.15">
+              Kichik harakatlar —
+              <span style="color: var(--green)">katta o'zgarishlar.</span>
+            </h2>
+            <p style="color: var(--muted); line-height: 1.9">
+              Muammo shundaki, ko'pchilik chiqindilarni qanday ajratish va qayta
+              ishlash mumkinligini bilmaydi. EcoLife tushunarli qo'llanmalar,
+              amaliy maslahatlar va odatlar kuzatuvi orqali ekologik madaniyatni
+              rivojlantirishga yordam beradi.
+            </p>
+            <div class="check-list">
+              <div>
+                <b class="check">✓</b
+                ><span>Chiqindilarni kategoriyalar bo'yicha saralash</span>
+              </div>
+              <div>
+                <b class="check">✓</b
+                ><span>Qayta ishlash mumkin bo'lgan mahsulotlarni bilish</span>
+              </div>
+              <div>
+                <b class="check">✓</b
+                ><span>Ekologik odatlarni belgilab, natijani kuzatish</span>
+              </div>
+              <div>
+                <b class="check">✓</b
+                ><span>AI demo orqali chiqindi turini aniqlashni sinash</span>
+              </div>
+            </div>
+            <a class="btn" href="dashboard.html"
+              >Odatlarimni kuzatish <i data-lucide="arrow-right"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+      <section class="section section-soft">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="eyebrow">Platforma imkoniyatlari</span>
+            <h2>Yashil hayot uchun kerakli vositalar</h2>
+            <p>
+              Ekologik bilimni kundalik hayotdagi foydali harakatlarga
+              aylantiring.
+            </p>
+          </div>
+          <div class="grid grid-3">
+            <a class="feature reveal" href="sorting.html"
+              ><div class="icon-bubble">♻️</div>
+              <h3>Saralash qo'llanmasi</h3>
+              <p>
+                Plastik, qog'oz, shisha va organik chiqindilarni ajratish
+                bo'yicha sodda yo'riqnoma.
+              </p></a
+            >
+            <a class="feature reveal" href="scanner.html"
+              ><div class="icon-bubble">🤖</div>
+              <h3>AI Waste Scanner</h3>
+              <p>
+                Rasm yuklang va o'quv demo orqali chiqindi kategoriyasi haqida
+                tavsiya oling.
+              </p></a
+            >
+            <a class="feature reveal" href="dashboard.html"
+              ><div class="icon-bubble">📊</div>
+              <h3>Odatlar statistikasi</h3>
+              <p>
+                Kunlik ekologik vazifalarni belgilang, progress va eco
+                ballaringizni kuzating.
+              </p></a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="eyebrow">Yashil hayot galereyasi</span>
+            <h2>Tabiatdan ilhom oling</h2>
+            <p>Sayyoramiz go'zalligini asrash har birimizning qo'limizda.</p>
+          </div>
+          <div class="grid grid-3">
+            <div class="gallery-card reveal">
+              <img
+                src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=900&auto=format&fit=crop"
+                alt="Yashil o'rmon"
+              />
+              <div class="gallery-caption">
+                <small>01 · TABIAT</small>
+                <h3>O'rmonlarni asraylik</h3>
+              </div>
+            </div>
+            <div class="gallery-card reveal">
+              <img
+                src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=900&auto=format&fit=crop"
+                alt="Moviy okean"
+              />
+              <div class="gallery-caption">
+                <small>02 · SUV</small>
+                <h3>Suv manbalarini himoya qiling</h3>
+              </div>
+            </div>
+            <div class="gallery-card reveal">
+              <img
+                src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?w=900&auto=format&fit=crop"
+                alt="Yashil o'simlik"
+              />
+              <div class="gallery-caption">
+                <small>03 · YASHIL HAYOT</small>
+                <h3>Ko'proq ko'chat eking</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section-soft">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="eyebrow">Ekologik videolar</span>
+            <h2>Ko'ring, o'rganing, amal qiling</h2>
+            <p>
+              Videolarni boshqaruv tugmalari orqali tomosha qiling. Internetga
+              ulanish talab qilinadi.
+            </p>
+          </div>
+          <div class="grid grid-3">
+            <article class="card video-card reveal">
+              <video
+                controls
+                preload="none"
+                poster="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800"
+              >
+                <source
+                  src="https://videos.pexels.com/video-files/3129671/3129671-hd_1920_1080_25fps.mp4"
+                  type="video/mp4"
+                />
+              </video>
+              <div class="card-body">
+                <span class="tag">01 · TABIAT</span>
+                <h3>Yashil tabiat</h3>
+                <p>Tabiat go'zalligini asrash haqida.</p>
+              </div>
+            </article>
+            <article class="card video-card reveal">
+              <video
+                controls
+                preload="none"
+                poster="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=800"
+              >
+                <source
+                  src="https://videos.pexels.com/video-files/3195394/3195394-hd_1920_1080_25fps.mp4"
+                  type="video/mp4"
+                />
+              </video>
+              <div class="card-body">
+                <span class="tag">02 · QAYTA ISHLASH</span>
+                <h3>Chiqindilarni saralash</h3>
+                <p>Qayta ishlash odatlarini o'rganing.</p>
+              </div>
+            </article>
+            <article class="card video-card reveal">
+              <video
+                controls
+                preload="none"
+                poster="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?w=800"
+              >
+                <source
+                  src="https://videos.pexels.com/video-files/856857/856857-hd_1920_1080_30fps.mp4"
+                  type="video/mp4"
+                />
+              </video>
+              <div class="card-body">
+                <span class="tag">03 · YASHIL MAKON</span>
+                <h3>O'simliklar olami</h3>
+                <p>Yashil hududlar va ularning ahamiyati.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="eyebrow">Global muammolar</span>
+            <h2>Sayyoramizga e'tibor bering</h2>
+          </div>
+          <div class="grid grid-3">
+            <article class="card reveal">
+              <img
+                src="https://images.unsplash.com/photo-1618477461853-cf6ed80faba5?w=800"
+                alt="Dengizdagi plastik ifloslanish"
+              />
+              <div class="card-body">
+                <h3>Okean ifloslanishi</h3>
+                <p>
+                  Plastik chiqindilar suv ekotizimiga zarar yetkazishi mumkin.
+                  Bir martalik plastikni kamaytirish muhim.
+                </p>
+              </div>
+            </article>
+            <article class="card reveal">
+              <img
+                src="https://images.unsplash.com/photo-1476231682828-37e571bc172f?w=800"
+                alt="O'rmon manzarasi"
+              />
+              <div class="card-body">
+                <h3>O'rmonlarning kamayishi</h3>
+                <p>
+                  O'rmonlar biologik xilma-xillik va ekologik muvozanat uchun
+                  muhim.
+                </p>
+              </div>
+            </article>
+            <article class="card reveal">
+              <img
+                src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800"
+                alt="Tog'lar va tuman"
+              />
+              <div class="card-body">
+                <h3>Iqlim o'zgarishi</h3>
+                <p>
+                  Energiya tejamkorligi va tabiatni asrash atrof-muhitga
+                  ta'sirimizni kamaytiradi.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="cta reveal">
+            <h2>Yashil kelajak bizdan boshlanadi!</h2>
+            <p>Bugun bitta foydali odatni tanlang va uni davom ettiring.</p>
+            <a class="btn btn-light" href="dashboard.html"
+              >Mening ekologik rejam <i data-lucide="arrow-right"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <a class="brand" href="index.html"
+              ><span class="brand-mark"><i data-lucide="leaf"></i></span
+              ><span>Eco<span>Life.</span></span></a
+            >
+            <p>
+              Tabiatni asrash — kelajakni asrash. Har bir kichik ekologik qadam
+              katta o'zgarishlarga sabab bo'ladi.
+            </p>
+          </div>
+          <div>
+            <h4>Platforma</h4>
+            <div class="footer-links">
+              <a href="index.html">Bosh sahifa</a
+              ><a href="sorting.html">Saralash</a
+              ><a href="scanner.html">AI Scanner</a>
+            </div>
+          </div>
+          <div>
+            <h4>Imkoniyatlar</h4>
+            <div class="footer-links">
+              <a href="sorting.html#categories">Chiqindi turlari</a
+              ><a href="sorting.html#guide">Qayta ishlash</a
+              ><a href="dashboard.html">Odatlarni kuzatish</a>
+            </div>
+          </div>
+          <div>
+            <h4>Bizning maqsad</h4>
+            <p>
+              Toza muhit, ongli iste'mol va yashil kelajak sari birgalikda
+              harakat.
+            </p>
+          </div>
+        </div>
+        <div class="copyright">
+          © 2026 EcoLife. O'quv loyiha. Barcha huquqlar himoyalangan.
+        </div>
+      </div>
+    </footer>
+    <button class="back-top" id="backTop" aria-label="Yuqoriga">↑</button>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

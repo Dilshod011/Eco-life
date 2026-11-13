@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EcoLife — Saralash qo'llanmasi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="page-sorting">
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="index.html"
+          ><span class="brand-mark"><i data-lucide="leaf"></i></span
+          ><span>Eco<span>Life.</span></span></a
+        >
+        <nav class="nav-links">
+          <a href="index.html" data-page="index.html">Bosh sahifa</a
+          ><a href="sorting.html" data-page="sorting.html">Saralash</a
+          ><a href="scanner.html" data-page="scanner.html">AI Scanner</a
+          ><a href="dashboard.html" data-page="dashboard.html">Odatlarim</a>
+        </nav>
+        <a class="btn nav-cta" href="scanner.html"
+          >Sinab ko'rish <i data-lucide="arrow-up-right"></i
+        ></a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Menyuni ochish">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+      <div class="mobile-nav container" id="mobileNav">
+        <a href="index.html">Bosh sahifa</a
+        ><a href="sorting.html">Saralash qo'llanmasi</a
+        ><a href="scanner.html">AI Scanner</a
+        ><a href="dashboard.html">Ekologik odatlar</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero photo-hero">
+        <div class="container reveal">
+          <span class="eyebrow">Eco qo'llanma · 02</span>
+          <h1>Chiqindini to'g'ri<br />saralang!</h1>
+          <p>
+            Har bir chiqindi o'z kategoriyasiga ega. To'g'ri ajratish qayta
+            ishlash jarayonini yengillashtiradi va resurslardan samarali
+            foydalanishga yordam beradi.
+          </p>
+        </div>
+      </section>
+      <section class="section" id="categories">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="eyebrow">Asosiy kategoriyalar</span>
+            <h2>Chiqindi turlari bilan tanishing</h2>
+            <p>
+              Chiqindilarni imkon qadar toza va quruq holda alohida yig'ing.
+              Hududingizdagi qabul qoidalarini ham tekshiring.
+            </p>
+          </div>
+          <div class="grid grid-4">
+            <article class="card reveal">
+              <img
+                src="https://images.unsplash.com/photo-1605600659873-d808a13e4d9a?w=800"
+                alt="Plastik butilkalar"
+              />
+              <div class="card-body">
+                <span class="tag">01 · PLASTIK</span>
+                <h3>Plastik</h3>
+                <p>
+                  Ichimlik butilkalari, ayrim plastik idishlar va qadoqlar.
+                  Idishlarni bo'shatib, chayib qo'ying.
+                </p>
+              </div>
+            </article>
+            <article class="card reveal">
+              <img
+                src="https://images.unsplash.com/photo-1531058020387-3be344556be6?w=800"
+                alt="Qog'oz va karton"
+              />
+              <div class="card-body">
+                <span class="tag">02 · QOG'OZ</span>
+                <h3>Qog'oz</h3>
+                <p>
+                  Gazeta, daftar, ofis qog'ozi va karton qutilar. Ularni quruq
+                  va toza saqlang.
+                </p>
+              </div>
+            </article>
+            <article class="card reveal">
+              <img
+                src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=800"
+                alt="Shisha idishlar"
+              />
+              <div class="card-body">
+                <span class="tag">03 · SHISHA</span>
+                <h3>Shisha</h3>
+                <p>
+                  Shisha butilkalar va oziq-ovqat bankalari. Ehtiyotkorlik bilan
+                  alohida yig'ing.
+                </p>
+              </div>
+            </article>
+            <article class="card reveal">
+              <img
+                src="https://images.unsplash.com/photo-1589923188900-85dae523342b?w=800"
+                alt="Organik chiqindilar"
+              />
+              <div class="card-body">
+                <span class="tag">04 · ORGANIK</span>
+                <h3>Organik</h3>
+                <p>
+                  Meva po'stlari, sabzavot qoldiqlari va barglar. Kompost qilish
+                  imkoniyatini tekshiring.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="eyebrow"
+              ><i data-lucide="leaf"></i> Yashil kundalik</span
+            >
+            <h2>To'g'ri saralashning foydasi</h2>
+            <p>
+              Chiqindilarni ajratish resurslarni tejash va qayta ishlashni
+              qo'llab-quvvatlashga yordam beradi.
+            </p>
+          </div>
+          <div class="grid grid-3">
+            <article class="feature reveal">
+              <div class="icon-bubble"><i data-lucide="trees"></i></div>
+              <h3>Tabiatni asrash</h3>
+              <p>
+                Atrof-muhitga tushadigan keraksiz chiqindilarni kamaytirishga
+                hissa qo'shing.
+              </p>
+            </article>
+            <article class="feature reveal">
+              <div class="icon-bubble"><i data-lucide="refresh-cw"></i></div>
+              <h3>Resurslarni tejash</h3>
+              <p>
+                Qayta ishlanadigan materiallar yangi mahsulotlar uchun xomashyo
+                bo'lishi mumkin.
+              </p>
+            </article>
+            <article class="feature reveal">
+              <div class="icon-bubble"><i data-lucide="users"></i></div>
+              <h3>Ongli jamiyat</h3>
+              <p>
+                Oila va do'stlar bilan saralash odatini ulashib, ijobiy
+                o'zgarishni kengaytiring.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="section section-soft" id="guide">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="eyebrow">Interaktiv qo'llanma</span>
+            <h2>Qaysi mahsulotni qayta ishlash mumkin?</h2>
+            <p>Kategoriyani tanlang va amaliy tavsiyalar bilan tanishing.</p>
+          </div>
+          <div class="tabs reveal">
+            <button class="tab active" data-tab="plastic">
+              <i data-lucide="recycle"></i> Plastik</button
+            ><button class="tab" data-tab="paper">
+              <i data-lucide="package"></i> Qog'oz</button
+            ><button class="tab" data-tab="glass">
+              <i data-lucide="glass-water"></i> Shisha</button
+            ><button class="tab" data-tab="organic">
+              <i data-lucide="sprout"></i> Organik
+            </button>
+          </div>
+          <div class="tab-panel active" id="plastic">
+            <h3>Plastik chiqindilar</h3>
+            <p>
+              Plastik buyumlarda qayta ishlash belgisi borligini tekshiring.
+              Mahalliy punktlar qabul qiladigan turlar farq qilishi mumkin.
+            </p>
+            <ul>
+              <li>Ichimlik butilkalari va ayrim qopqoqlar</li>
+              <li>Toza plastik oziq-ovqat idishlari</li>
+              <li>Plastik qadoqlar — qabul qoidalariga qarab</li>
+            </ul>
+          </div>
+          <div class="tab-panel" id="paper">
+            <h3>Qog'oz va karton</h3>
+            <p>
+              Qog'ozni quruq saqlang. Yog' yoki ovqat bilan kuchli ifloslangan
+              qog'oz ko'pincha qayta ishlashga yaramaydi.
+            </p>
+            <ul>
+              <li>Gazeta, daftar va ofis qog'ozi</li>
+              <li>Karton qutilar — buklab qo'ying</li>
+              <li>Toza qog'oz qadoqlar</li>
+            </ul>
+          </div>
+          <div class="tab-panel" id="glass">
+            <h3>Shisha buyumlar</h3>
+            <p>
+              Shisha idishlarni boshqa chiqindilardan ajrating. Ranglar bo'yicha
+              ajratish talabi hududga qarab farq qiladi.
+            </p>
+            <ul>
+              <li>Shisha butilkalar</li>
+              <li>Oziq-ovqat bankalari</li>
+              <li>Qayta ishlash qabul qiladigan shisha idishlar</li>
+            </ul>
+          </div>
+          <div class="tab-panel" id="organic">
+            <h3>Organik chiqindilar</h3>
+            <p>
+              Meva-sabzavot qoldiqlari va quruq barglar kompost tayyorlashda
+              ishlatilishi mumkin. Go'sht va sut mahsulotlari bo'yicha kompost
+              qoidalarini tekshiring.
+            </p>
+            <ul>
+              <li>Meva po'stlari va sabzavot qoldiqlari</li>
+              <li>Quruq barglar va o'simlik qoldiqlari</li>
+              <li>Choy qoldig'i va qahva quyqasi</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container split">
+          <div class="reveal">
+            <span class="eyebrow">Esda tuting</span>
+            <h2 style="font-size: 40px; line-height: 1.15">
+              Saralashdan oldin 3 oddiy qadam
+            </h2>
+            <div class="check-list">
+              <div>
+                <b class="check">01</b
+                ><span
+                  ><b>Bo'shating.</b> Idish ichidagi suyuqlik yoki ovqat
+                  qoldig'ini olib tashlang.</span
+                >
+              </div>
+              <div>
+                <b class="check">02</b
+                ><span
+                  ><b>Tozalang.</b> Imkon bo'lsa, qayta ishlanadigan idishlarni
+                  chaying.</span
+                >
+              </div>
+              <div>
+                <b class="check">03</b
+                ><span
+                  ><b>Ajrating.</b> Har bir turini alohida qutiga joylang.</span
+                >
+              </div>
+            </div>
+            <a class="btn" href="scanner.html"
+              >Chiqindini skaner qilish <i data-lucide="arrow-right"></i
+            ></a>
+          </div>
+          <img
+            class="split-img reveal"
+            src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=1000"
+            alt="Qayta ishlash va saralash jarayoni"
+          />
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <a class="brand" href="index.html"
+              ><span class="brand-mark"><i data-lucide="leaf"></i></span
+              ><span>Eco<span>Life.</span></span></a
+            >
+            <p>
+              Tabiatni asrash — kelajakni asrash. Har bir kichik ekologik qadam
+              katta o'zgarishlarga sabab bo'ladi.
+            </p>
+          </div>
+          <div>
+            <h4>Platforma</h4>
+            <div class="footer-links">
+              <a href="index.html">Bosh sahifa</a
+              ><a href="sorting.html">Saralash</a
+              ><a href="scanner.html">AI Scanner</a>
+            </div>
+          </div>
+          <div>
+            <h4>Imkoniyatlar</h4>
+            <div class="footer-links">
+              <a href="sorting.html#categories">Chiqindi turlari</a
+              ><a href="sorting.html#guide">Qayta ishlash</a
+              ><a href="dashboard.html">Odatlarni kuzatish</a>
+            </div>
+          </div>
+          <div>
+            <h4>Bizning maqsad</h4>
+            <p>
+              Toza muhit, ongli iste'mol va yashil kelajak sari birgalikda
+              harakat.
+            </p>
+          </div>
+        </div>
+        <div class="copyright">
+          © 2026 EcoLife. O'quv loyiha. Barcha huquqlar himoyalangan.
+        </div>
+      </div>
+    </footer>
+    <button class="back-top" id="backTop" aria-label="Yuqoriga">↑</button>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

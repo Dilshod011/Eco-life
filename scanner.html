@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EcoLife — AI Waste Scanner</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="page-scanner">
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="index.html"
+          ><span class="brand-mark"><i data-lucide="leaf"></i></span
+          ><span>Eco<span>Life.</span></span></a
+        >
+        <nav class="nav-links">
+          <a href="index.html" data-page="index.html">Bosh sahifa</a
+          ><a href="sorting.html" data-page="sorting.html">Saralash</a
+          ><a href="scanner.html" data-page="scanner.html">AI Scanner</a
+          ><a href="dashboard.html" data-page="dashboard.html">Odatlarim</a>
+        </nav>
+        <a class="btn nav-cta" href="scanner.html"
+          >Sinab ko'rish <i data-lucide="arrow-up-right"></i
+        ></a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Menyuni ochish">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+      <div class="mobile-nav container" id="mobileNav">
+        <a href="index.html">Bosh sahifa</a
+        ><a href="sorting.html">Saralash qo'llanmasi</a
+        ><a href="scanner.html">AI Scanner</a
+        ><a href="dashboard.html">Ekologik odatlar</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero photo-hero scanner-hero">
+        <div class="container reveal">
+          <span class="eyebrow"
+            ><i data-lucide="scan-search"></i> ECO TECHNOLOGY · 03</span
+          >
+          <h1>Chiqindini taning.<br /><em>Kelajakni asrang.</em></h1>
+          <p>
+            AI Scanner chiqindi turini aniqlash, uni qanday saralash va qayta
+            ishlash bo'yicha foydali tavsiyalar berishga mo'ljallangan.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-light" href="#scannerLab"
+              ><i data-lucide="scan-line"></i> Skanerni sinash</a
+            ><a class="btn btn-glass" href="sorting.html"
+              ><i data-lucide="book-open"></i> Qo'llanma</a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="section scanner-intro">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="eyebrow"
+              ><i data-lucide="brain-circuit"></i> Aqlli ekologik
+              yordamchi</span
+            >
+            <h2>Oddiy suratdan — foydali ekologik tavsiyagacha</h2>
+            <p>
+              Bu taqdimot prototipi rasm yuklash va natija interfeysini namoyish
+              etadi. Haqiqiy tasvirni AI orqali aniqlash uchun vision model yoki
+              backend API ulash kerak.
+            </p>
+          </div>
+          <div class="scanner-layout" id="scannerLab">
+            <div class="scanner-box scanner-upload reveal" id="uploadBox">
+              <div class="scanner-orbit">
+                <div class="upload-icon"><i data-lucide="scan-line"></i></div>
+              </div>
+              <span class="tag">IMAGE ANALYSIS LAB</span>
+              <h3>Chiqindi rasmini yuklang</h3>
+              <p class="scanner-subtitle">
+                Aniq va yorug' surat tanlang. JPG, PNG yoki WEBP · 10 MB gacha.
+              </p>
+              <label class="upload-drop" for="imageInput"
+                ><i data-lucide="cloud-upload"></i
+                ><b>Rasmni tanlash uchun bosing</b
+                ><small>yoki faylni shu oynaga olib keling</small></label
+              ><input
+                class="input scanner-file"
+                type="file"
+                id="imageInput"
+                accept="image/*"
+              /><img
+                id="previewImage"
+                class="preview hidden"
+                alt="Yuklangan chiqindi rasmi"
+              />
+              <div class="scanner-actions">
+                <button class="btn" id="analyzeBtn" disabled>
+                  <i data-lucide="sparkles"></i> AI tahlilni boshlash</button
+                ><button class="btn btn-outline" id="removeImage" type="button">
+                  <i data-lucide="refresh-ccw"></i> Tozalash
+                </button>
+              </div>
+              <p id="fileStatus" class="file-status">
+                <i data-lucide="info"></i> Hali rasm tanlanmagan.
+              </p>
+            </div>
+            <div class="scanner-result-wrap reveal">
+              <div class="result-topline">
+                <span class="live-dot"></span> ANALYSIS RESULT
+                <span class="result-secure"
+                  ><i data-lucide="shield-check"></i> Demo rejim</span
+                >
+              </div>
+              <div class="result-box">
+                <div class="result-symbol"><i data-lucide="leaf"></i></div>
+                <span class="eyebrow">Sizning natijangiz</span>
+                <h2 id="resultCategory">Tahlilni kutmoqda</h2>
+                <p id="resultDescription">
+                  Rasm tanlang va tahlil tugmasini bosing. Demo versiyada
+                  kategoriya fayl nomidagi kalit so'zlardan taxmin qilinadi.
+                </p>
+                <div class="result-advice" id="resultAdvice">
+                  <i data-lucide="lightbulb"></i
+                  ><span>Maslahat: chiqindilarni toza va alohida yig'ing.</span>
+                </div>
+                <div class="result-meta">
+                  <span><i data-lucide="recycle"></i> Saralash tavsiyasi</span
+                  ><span><i data-lucide="globe-2"></i> EcoLife</span>
+                </div>
+              </div>
+              <div class="scanner-note">
+                <i data-lucide="info"></i>
+                <p>
+                  <b>Muhim:</b> bu o'quv demo haqiqiy AI modeli emas. Rasm
+                  mazmunini avtomatik ko'rmaydi; fayl nomiga asoslangan namuna
+                  natijani chiqaradi.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section-soft">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="eyebrow"><i data-lucide="workflow"></i> Jarayon</span>
+            <h2>Scanner qanday ishlashi rejalashtirilgan?</h2>
+            <p>
+              Kelajakdagi to'liq versiyada jarayon uch oddiy bosqichdan iborat
+              bo'ladi.
+            </p>
+          </div>
+          <div class="grid grid-3 scanner-steps">
+            <article class="feature reveal">
+              <div class="icon-bubble"><i data-lucide="image-plus"></i></div>
+              <span class="step-no">01 / UPLOAD</span>
+              <h3>Rasm yuklash</h3>
+              <p>
+                Foydalanuvchi plastik, qog'oz, shisha yoki organik chiqindi
+                suratini tanlaydi.
+              </p>
+            </article>
+            <article class="feature reveal">
+              <div class="icon-bubble"><i data-lucide="brain-circuit"></i></div>
+              <span class="step-no">02 / ANALYZE</span>
+              <h3>AI tahlili</h3>
+              <p>
+                Tasvir modeli suratdagi obyektni aniqlab, chiqindi turini
+                kategoriya bilan solishtiradi.
+              </p>
+            </article>
+            <article class="feature reveal">
+              <div class="icon-bubble">
+                <i data-lucide="clipboard-check"></i>
+              </div>
+              <span class="step-no">03 / RESULT</span>
+              <h3>Amaliy tavsiya</h3>
+              <p>
+                Natijada saralash qoidasi, qayta ishlash imkoniyati va ekologik
+                maslahat ko'rsatiladi.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="eyebrow"
+              ><i data-lucide="images"></i> Ko'p uchraydigan chiqindilar</span
+            >
+            <h2>Tabiatga ta'sirni kamaytirishdan boshlang</h2>
+            <p>
+              Har bir materialni to'g'ri ajratish qayta ishlash zanjirining
+              muhim qismidir.
+            </p>
+          </div>
+          <div class="grid grid-4">
+            <article class="card reveal">
+              <img
+                src="https://images.unsplash.com/photo-1605600659873-d808a13e4d9a?w=800"
+                alt="Plastik idishlar"
+              />
+              <div class="card-body">
+                <span class="tag">01 · PLASTIK</span>
+                <h3>Plastik idishlar</h3>
+                <p>
+                  Bo'shatib, chayib, mahalliy qabul qoidalariga ko'ra ajrating.
+                </p>
+              </div>
+            </article>
+            <article class="card reveal">
+              <img
+                src="https://images.unsplash.com/photo-1531058020387-3be344556be6?w=800"
+                alt="Qog'oz va karton"
+              />
+              <div class="card-body">
+                <span class="tag">02 · QOG'OZ</span>
+                <h3>Qog'oz va karton</h3>
+                <p>Quruq saqlang, qutilarni buklab joyni tejang.</p>
+              </div>
+            </article>
+            <article class="card reveal">
+              <img
+                src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=800"
+                alt="Shisha idishlar"
+              />
+              <div class="card-body">
+                <span class="tag">03 · SHISHA</span>
+                <h3>Shisha idishlar</h3>
+                <p>Ehtiyotkorlik bilan alohida yig'ing.</p>
+              </div>
+            </article>
+            <article class="card reveal">
+              <img
+                src="https://images.unsplash.com/photo-1589923188900-85dae523342b?w=800"
+                alt="Organik chiqindilar"
+              />
+              <div class="card-body">
+                <span class="tag">04 · ORGANIK</span>
+                <h3>Organik qoldiqlar</h3>
+                <p>
+                  Kompost qilish mumkin bo'lgan qoldiqlarni alohida to'plang.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="section section-dark">
+        <div class="container split">
+          <img
+            class="split-img reveal"
+            src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=1000"
+            alt="Chiqindilarni saralash"
+          />
+          <div class="reveal">
+            <span class="eyebrow"
+              ><i data-lucide="sprout"></i> Texnologiya + mas'uliyat</span
+            >
+            <h2 style="font-size: 40px; line-height: 1.15">
+              Kichik qarorlar katta o'zgarishlarga olib keladi
+            </h2>
+            <p style="color: #c0d7c7; line-height: 1.9">
+              EcoLife texnologiya orqali ekologik bilimni kundalik hayotga olib
+              kirishni maqsad qiladi. Scanner esa to'g'ri odatlarni
+              shakllantirishga yordam beradigan yo'naltiruvchi vosita sifatida
+              ishlab chiqiladi.
+            </p>
+            <a class="btn btn-light" href="dashboard.html"
+              ><i data-lucide="chart-no-axes-column-increasing"></i> Odatlarimni
+              kuzatish</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <a class="brand" href="index.html"
+              ><span class="brand-mark"><i data-lucide="leaf"></i></span
+              ><span>Eco<span>Life.</span></span></a
+            >
+            <p>
+              Tabiatni asrash — kelajakni asrash. Har bir kichik ekologik qadam
+              katta o'zgarishlarga sabab bo'ladi.
+            </p>
+          </div>
+          <div>
+            <h4>Platforma</h4>
+            <div class="footer-links">
+              <a href="index.html">Bosh sahifa</a
+              ><a href="sorting.html">Saralash</a
+              ><a href="scanner.html">AI Scanner</a>
+            </div>
+          </div>
+          <div>
+            <h4>Imkoniyatlar</h4>
+            <div class="footer-links">
+              <a href="sorting.html#categories">Chiqindi turlari</a
+              ><a href="sorting.html#guide">Qayta ishlash</a
+              ><a href="dashboard.html">Odatlarni kuzatish</a>
+            </div>
+          </div>
+          <div>
+            <h4>Bizning maqsad</h4>
+            <p>
+              Toza muhit, ongli iste'mol va yashil kelajak sari birgalikda
+              harakat.
+            </p>
+          </div>
+        </div>
+        <div class="copyright">
+          © 2026 EcoLife. O'quv loyiha. Barcha huquqlar himoyalangan.
+        </div>
+      </div>
+    </footer>
+    <button class="back-top" id="backTop" aria-label="Yuqoriga">↑</button>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
